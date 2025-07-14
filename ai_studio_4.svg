@@ -1,0 +1,36 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Background circle -->
+  <circle cx="80" cy="80" r="76" fill="#E6E6E6"></circle>
+
+  <!-- Center control surface -->
+  <rect x="48" y="48" width="64" height="64" rx="12" fill="#FFFFFF" stroke="#1D2939" stroke-width="4"></rect>
+
+  <!-- Gradient spark overlay using polygon clip style -->
+  <defs>
+    <linearGradient id="greenGradient" x1="60" y1="60" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F5132"></stop>
+      <stop offset="100%" stop-color="#4CAF50"></stop>
+    </linearGradient>
+    <clipPath id="starClip">
+      <polygon points="80,56 96,80 80,104 64,80"></polygon>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#starClip)">
+    <rect x="48" y="48" width="64" height="64" rx="12" fill="url(#greenGradient)"></rect>
+  </g>
+
+  <!-- Connection lines -->
+  <g stroke="#1D2939" stroke-width="3" stroke-linecap="round">
+    <line x1="80" y1="28" x2="80" y2="48"></line>
+    <line x1="132" y1="80" x2="112" y2="80"></line>
+    <line x1="80" y1="132" x2="80" y2="112"></line>
+    <line x1="28" y1="80" x2="48" y2="80"></line>
+  </g>
+
+  <!-- Peripheral nodes -->
+  <circle cx="80" cy="24" r="7" fill="#FFFFFF" stroke="#1D2939" stroke-width="3"></circle>
+  <circle cx="136" cy="80" r="7" fill="#FFFFFF" stroke="#1D2939" stroke-width="3"></circle>
+  <circle cx="80" cy="136" r="7" fill="#FFFFFF" stroke="#1D2939" stroke-width="3"></circle>
+  <circle cx="24" cy="80" r="7" fill="#FFFFFF" stroke="#1D2939" stroke-width="3"></circle>
+</svg>
