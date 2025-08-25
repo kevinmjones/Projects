@@ -1,0 +1,15 @@
+{
+  "name": "onetrust-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for managing OneTrust projects and tasks",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node -e \"console.log('No tests');\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "axios": "^1.6.7"
+  }
+}
